@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: wildcxrd-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TOKEN
+        sync: false
+      - key: TICKET_CATEGORY_ID
+        sync: false
